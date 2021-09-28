@@ -1,13 +1,12 @@
 #car-rent{
-    background-color: rgb(37, 36, 36);
+    background-color: $BGcolor;
     color: white;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    border-bottom: solid 1px white;
-    padding-bottom: 50px;
-    padding-top: 50px;
+    @include borderB;
+    @include paddingT-B;
     #car-infos{
         padding: 20px;
         font-size: 1.2rem;
@@ -21,15 +20,15 @@
         min-width: 300px;
     }
 }
+
 #roasting-rent{
-    background-color: rgb(37, 36, 36);
+    background-color: $BGcolor;
     color: white;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border-bottom: solid 1px white;
-    padding-bottom: 50px;
-    padding-top: 50px;
+    @include borderB;
+    @include paddingT-B;
     #roasting-infos{
         padding: 20px;
         font-size: 1.2rem;
